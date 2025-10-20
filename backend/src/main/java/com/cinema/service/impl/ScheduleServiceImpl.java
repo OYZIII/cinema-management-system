@@ -90,10 +90,13 @@ public class ScheduleServiceImpl extends ServiceImpl<ScheduleMapper, Schedule> i
         
         Set<String> soldSeats = new HashSet<>();
         for (Order order : orders) {
-            List<Map<String, Integer>> seats = JSON.parseArray(order.getSeats(), 
-                    new com.alibaba.fastjson2.TypeReference<Map<String, Integer>>(){});
-            for (Map<String, Integer> seat : seats) {
-                soldSeats.add(seat.get("row") + "-" + seat.get("col"));
+            String seatsJson = order.getSeats();
+            com.alibaba.fastjson2.JSONArray jsonArray = JSON.parseArray(seatsJson);
+            for (int i = 0; i < jsonArray.size(); i++) {
+                com.alibaba.fastjson2.JSONObject seat = jsonArray.getJSONObject(i);
+                Integer row = seat.getInteger("row");
+                Integer col = seat.getInteger("col");
+                soldSeats.add(row + "-" + col);
             }
         }
         

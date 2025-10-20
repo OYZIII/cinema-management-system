@@ -23,7 +23,7 @@ jobs:
     - name: Build with Maven
       run: |
         cd backend
-        mvn clean package -DskipTests
+        mvn clean package -DskipTests -U
     
   frontend-build:
     runs-on: ubuntu-latest
