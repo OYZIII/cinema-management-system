@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Outlet, useNavigate, Link } from 'react-router-dom';
-import { Layout as AntLayout, Menu, Dropdown, Avatar, message } from 'antd';
+import { Layout as AntLayout, Menu, Dropdown, Avatar, message, Button } from 'antd';
 import { UserOutlined, LogoutOutlined, HomeOutlined, VideoCameraOutlined, ShoppingOutlined, DashboardOutlined } from '@ant-design/icons';
 import './index.css';
 
@@ -84,8 +84,12 @@ const Layout: React.FC = () => {
             </Dropdown>
           ) : (
             <div>
-              <a onClick={() => navigate('/login')} style={{ color: '#fff', marginRight: '16px' }}>登录</a>
-              <a onClick={() => navigate('/register')} style={{ color: '#fff' }}>注册</a>
+              <Button type="link" onClick={() => navigate('/login')} style={{ color: '#fff', marginRight: '16px' }}>
+                登录
+              </Button>
+              <Button type="link" onClick={() => navigate('/register')} style={{ color: '#fff' }}>
+                注册
+              </Button>
             </div>
           )}
         </div>
