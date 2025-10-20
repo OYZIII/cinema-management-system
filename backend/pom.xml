@@ -28,7 +28,7 @@
         <java.version>1.8</java.version>
         <mybatis-plus.version>3.5.2</mybatis-plus.version>
         <jwt.version>0.9.1</jwt.version>
-        <fastjson.version>2.0.25</fastjson.version>
+        <fastjson.version>2.0.59</fastjson.version>
     </properties>
 
     <dependencies>
