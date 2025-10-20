@@ -1,0 +1,115 @@
+.seat-selection-container {
+}
+
+.screen {
+  text-align: center;
+  background: linear-gradient(to bottom, #333, #666);
+  color: #fff;
+  padding: 16px;
+  border-radius: 50% 50% 0 0 / 20% 20% 0 0;
+  margin: 24px auto;
+  max-width: 600px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.seats-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  margin: 24px 0;
+  padding: 24px;
+  background: #f5f5f5;
+  border-radius: 8px;
+}
+
+.seat-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.row-label {
+  width: 50px;
+  text-align: right;
+  color: #666;
+  font-size: 12px;
+}
+
+.seat {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px 8px 0 0;
+  cursor: pointer;
+  font-size: 12px;
+  transition: all 0.3s;
+}
+
+.seat-available {
+  background: #52c41a;
+  color: #fff;
+}
+
+.seat-available:hover {
+  background: #389e0d;
+  transform: scale(1.1);
+}
+
+.seat-selected {
+  background: #1890ff;
+  color: #fff;
+  transform: scale(1.1);
+}
+
+.seat-sold {
+  background: #d9d9d9;
+  color: #999;
+  cursor: not-allowed;
+}
+
+.legend {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  margin: 24px 0;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.legend-item .seat {
+  cursor: default;
+}
+
+.order-summary {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding: 24px;
+  background: #f5f5f5;
+  border-radius: 8px;
+  margin-top: 24px;
+}
+
+.selected-info {
+  flex: 1;
+}
+
+.price-info {
+  font-size: 18px;
+}
+
+.total-price {
+  color: #ff4d4f;
+  font-size: 24px;
+  font-weight: bold;
+  margin-left: 8px;
+}
+

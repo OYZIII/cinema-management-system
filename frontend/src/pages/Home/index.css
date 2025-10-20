@@ -1,0 +1,90 @@
+.home-container {
+  margin: -24px;
+}
+
+.banner {
+  margin-bottom: 32px;
+}
+
+.banner-item {
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+.banner-content h1 {
+  font-size: 48px;
+  margin-bottom: 16px;
+  color: #fff;
+}
+
+.banner-content p {
+  font-size: 24px;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.section {
+  padding: 32px;
+}
+
+.movie-cover {
+  position: relative;
+  overflow: hidden;
+  height: 300px;
+}
+
+.movie-cover img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s;
+}
+
+.movie-cover:hover img {
+  transform: scale(1.1);
+}
+
+.movie-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.movie-cover:hover .movie-overlay {
+  opacity: 1;
+}
+
+.movie-title {
+  font-size: 16px;
+  font-weight: bold;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.movie-info {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.movie-rating {
+  color: #faad14;
+}
+
+.movie-meta {
+  color: #999;
+  font-size: 12px;
+}
+
