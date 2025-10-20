@@ -100,53 +100,6 @@ cinema-management-system/
     └── cinema.sql
 ```
 
-## 快速开始
-
-### 后端启动
-
-1. 创建数据库并执行SQL脚本
-```bash
-mysql -u root -p < sql/cinema.sql
-```
-
-2. 配置应用参数
-```bash
-# 复制配置文件模板
-cd backend/src/main/resources
-cp application-example.yml application.yml
-
-# 编辑 application.yml，修改以下配置：
-# - 数据库连接信息（username, password）
-# - Redis连接信息（如果使用）
-# - JWT密钥（建议修改为自己的密钥）
-```
-
-3. 启动后端服务
-```bash
-cd backend
-mvn spring-boot:run
-```
-
-### 前端启动
-
-1. 安装依赖
-```bash
-cd frontend
-npm install
-```
-
-2. 启动开发服务器
-```bash
-npm start
-```
-
-3. 访问 http://localhost:3000
-
-## 默认账号
-
-- 管理员账号：admin / admin123
-- 普通用户：user / user123
-
 ## 核心功能展示
 
 - 响应式设计，支持PC端和移动端访问
